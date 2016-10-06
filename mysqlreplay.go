@@ -122,7 +122,8 @@ func main() {
 			break
 		}
 		if err != nil {
-			panic(err.Error)
+			fmt.Println(err)
+			continue
 		}
 		sessionid, err := strconv.Atoi(stmt[0])
 		if err != nil {
