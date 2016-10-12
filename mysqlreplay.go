@@ -123,6 +123,7 @@ func main() {
 		}
 		if err != nil {
 			fmt.Println(err)
+			fmt.Println("Skipping unreadable statement")
 			continue
 		}
 		sessionid, err := strconv.Atoi(stmt[0])
